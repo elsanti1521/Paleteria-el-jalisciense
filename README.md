@@ -1,1 +1,1 @@
-# Paleter-a-el-Jalisciense-
+# Paleteria-el-Jalisciense-
