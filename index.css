@@ -1,0 +1,64 @@
+img{
+    border-radius: 50px;
+    transition: transform 0.4s ease;
+}
+img:hover{
+    transform: scale(1.1) rotate(-5deg);
+}
+
+Body {
+  Font-family: Arial, sans-serif;
+  Margin: 0;
+  Padding: 0;
+}
+Header {
+  Background-color: #FAA18F;
+  Color: white;
+  Padding: 10px;
+  Text-align: center;
+  animation: aparecer 0.8s ease;
+}
+Nav {
+  Background-color: #FAA18f;
+  Padding: 10px;
+  Text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+Nav a {
+  Color: white;
+  Margin: 0 15px;
+  Text-decoration: none;
+  Font-weight: bold;
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+Nav a:hover {
+  background-color: white;
+  color: #FAA18F;
+  transform: translateY(-3px);
+}
+
+section {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+  text-align: center;
+  animation: aparecer 1s ease;
+}
+section h2 {
+  color: #FAA18F;
+  font-size: 2rem;
+}
+section h4 {
+  line-height: 1.6;
+  color: #555;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
