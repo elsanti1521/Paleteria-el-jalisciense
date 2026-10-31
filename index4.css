@@ -1,0 +1,44 @@
+Body {
+  Font-family: Arial, sans-serif;
+  Margin: 0;
+  Padding: 0;
+}
+Nav {
+  Background-color: #FAA18f;
+  Padding: 10px;
+  Text-align: center;
+}
+Nav a {
+  Color: white;
+  Margin: 0 15px;
+  Text-decoration: none;
+  Font-weight: bold;
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+Nav a:hover {
+  background-color: white;
+  color: #FAA18F;
+  transform: translateY(-3px);
+}
+
+h2 {
+  margin-top: 60px;
+  color: #FAA18F;
+  font-size: 2rem;
+  animation: rebote 0.8s ease;
+}
+h2::before {
+  content: "🍦";
+  display: block;
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+@keyframes rebote {
+  0% { opacity: 0; transform: scale(0.5); }
+  70% { opacity: 1; transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
