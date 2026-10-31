@@ -1,0 +1,120 @@
+img{
+    border-radius: 50px;
+    transition: transform 0.4s ease;
+}
+img:hover{
+    transform: scale(1.1) rotate(-5deg);
+}
+
+Body {
+  Font-family: Arial, sans-serif;
+  Margin: 0;
+  Padding: 0;
+}
+Header {
+  Background-color: #FAA18F;
+  Color: white;
+  Padding: 10px;
+  Text-align: center;
+  animation: aparecer 0.8s ease;
+}
+Nav {
+  Background-color: #FAA18f;
+  Padding: 10px;
+  Text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+Nav a {
+  Color: white;
+  Margin: 0 15px;
+  Text-decoration: none;
+  Font-weight: bold;
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+Nav a:hover {
+  background-color: white;
+  color: #FAA18F;
+  transform: translateY(-3px);
+}
+
+Body {
+  Font-family: Arial, sans-serif;
+  Background-color: #f4f4f4;
+  Padding: 20px;
+}
+Form {
+  Background: white;
+  Padding: 20px;
+  Border-radius: 8px;
+  Max-width: 600px;
+  Margin: 30px auto;
+  Box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+  animation: aparecer 1s ease;
+}
+Form:hover {
+  box-shadow: 0 8px 25px rgba(250, 161, 143, 0.4);
+}
+H2 {
+  Text-align: center;
+  color: #FAA18F;
+}
+Label {
+  Display: block;
+  Margin-top: 15px;
+  font-weight: bold;
+  color: #555;
+}
+Input, select, textarea {
+  Width: 100%;
+  Padding: 8px;
+  Margin-top: 5px;
+  Border-radius: 4px;
+  Border: 1px solid #ccc;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+Input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #FAA18F;
+  box-shadow: 0 0 0 3px rgba(250, 161, 143, 0.3);
+}
+Button {
+  Margin-top: 20px;
+  Padding: 10px 15px;
+  Background-color: #28ª745;
+  Color: white;
+  Border: none;
+  Border-radius: 5px;
+  Cursor: pointer;
+}
+Button:hover {
+  Background-color: #218838;
+}
+
+form a {
+  display: block;
+  margin-top: 20px;
+  padding: 12px;
+  text-align: center;
+  background-color: #FAA18F;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+form a:hover {
+  background-color: #F57F6A;
+  transform: scale(1.03);
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
